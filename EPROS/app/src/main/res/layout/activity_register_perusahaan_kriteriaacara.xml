@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_perusahaan_kriteriaacara"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.renaissance.epros.register_perusahaan_kriteriaacara">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="25">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:src="@drawable/kecil"/>
+
+            <TextView
+                android:text="KRITERIA PROPOSAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/register_fs"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:id="@+id/textView5" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"/>
+
+            <TextView
+                android:text="Menerima Acara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/register_fs"
+                android:id="@+id/textView6" />
+
+            <CheckBox
+                android:text="Formal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_formal" />
+
+            <CheckBox
+                android:text="Informal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_informal" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="Menerima Proposal dari Acara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/register_fs"
+                android:id="@+id/textView7" />
+
+            <CheckBox
+                android:text="SMA"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_sma" />
+
+            <CheckBox
+                android:text="Universitas"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_univ" />
+
+            <CheckBox
+                android:text="Umum"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_umum" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="Jangka Waktu Pengiriman Proposal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/register_fs"
+                android:id="@+id/textView8"
+                android:paddingBottom="10dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spin"
+                android:entries="@array/kriteria_jangkawaktu"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <MultiAutoCompleteTextView
+                    android:id="@+id/sponsor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bantuan Sponsor" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="Timbal balik (untuk perusahaan)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/register_fs"
+                android:id="@+id/textView" />
+
+            <CheckBox
+                android:text="Branding via Lisan"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_1" />
+
+            <CheckBox
+                android:text="Branding via Tulisan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_2" />
+
+            <CheckBox
+                android:text="Branding via Media Sosial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_3" />
+
+            <CheckBox
+                android:text="Penyediaan Stan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_4" />
+
+            <CheckBox
+                android:text="Demo Produk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_5" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:text="@string/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/simpan"
+                android:layout_gravity="center|bottom"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

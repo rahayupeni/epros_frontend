@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.renaissance.epros">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splashscreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login_ac"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pilihstatus"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".profil"
+            android:label="@string/title_activity_profil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".register_perusahaan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".register_komins"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".register_perusahaan_kriteriaacara"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".attachment"
+            android:label="@string/title_activity_attachment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".tipsandtrik" />
+        <activity
+            android:name=".setting"
+            android:label="@string/title_activity_setting" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/googleapi" />
+
+        <activity
+            android:name=".maps"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".attachment_layout" />
+        <activity android:name=".GetLokasi" />
+        <activity android:name=".SendLokasi"></activity>
+    </application>
+
+</manifest>
